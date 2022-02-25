@@ -14,12 +14,20 @@ import { ProductonuevoComponent } from './components/producto/productonuevo/prod
 import { FormsModule } from '@angular/forms';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { PedidoComponent } from './components/pedido/pedido.component';
+import { MotoComponent } from './components/moto/moto.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { MotonuevoComponent } from './components/moto/motonuevo/motonuevo.component';
+import { UsuarionuevoComponent } from './components/usuario/usuarionuevo/usuarionuevo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductonuevoComponent,
     PedidoComponent,
+    MotoComponent,
+    UsuarioComponent,
+    MotonuevoComponent,
+    UsuarionuevoComponent,
   ],
   imports: [
     BrowserModule,

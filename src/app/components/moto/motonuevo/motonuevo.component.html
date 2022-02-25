@@ -1,0 +1,23 @@
+<form  >
+    <div class="bd-example">
+        <div class="form-floating mb-3">
+            <input name="chofer" type="text" [(ngModel)]="item.chofer" class="form-control" id="choferInput" placeholder="chofer">
+            <label for="choferInput">NOMBRE DEL CHOFER</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="horario" type="text" [(ngModel)]="item.horario" class="form-control" id="horarioInput" placeholder="horario">
+            <label for="horarioInput">HORARIO</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="marca" type="text" [(ngModel)]="item.marca" class="form-control" id="marcaInput" placeholder="marca">
+            <label for="marcaInput">MARCA Y MODELO DE LA MOTO</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input name="placa" type="text" [(ngModel)]="item.placa" class="form-control" id="placaInput" placeholder="placa">
+            <label for="placaInput">PLACA</label>
+        </div>
+    </div>
+    <button type="button" (click)="salir()" class="btn btn-warning">Cancelar</button>
+    <button type="button" (click)="enviar()" class="btn btn-success">Guardar</button>
+
+</form>

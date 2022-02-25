@@ -7,6 +7,7 @@ import { MenuComponent } from "../menu/menu.component";
 import { MenuModule } from "../menu/menu.module";
 import { AdminLayoutComponent } from "./admin-layout.component";
 import { AdminLayoutRoutesR } from "./admin-layout.routing";
+
 //import { AdminLayoutRoutes } from "./admin-layout.routing";
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AdminLayoutRoutesR } from "./admin-layout.routing";
     declarations: [
         AdminLayoutComponent,
         ProductoComponent,
+
        // MenuComponent
     ]
 })

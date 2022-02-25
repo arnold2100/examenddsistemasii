@@ -1,0 +1,31 @@
+<a  [routerLink]="['/usuarioform']"class="btn btn-success">Nuevo</a>
+<form class="d-flex">
+    <input name="search" [(ngModel)]="search" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Buscar</button>
+  </form>
+<table>
+    <tr>
+        <th>NOMBRES Y APELLIDOS</th>
+        <th>DIRECCION</th>
+        <th>CELULAR</th>
+        <th>CEDULA</th>
+    </tr>
+    <tr *ngFor="let item of lista">
+        <td>{{item.nombre}}</td>
+        <td>{{item.direccion}}</td>
+        <td>{{item.celular}}</td>
+        <td>{{item.ci}}</td>
+        <td>
+            <a [routerLink]="['/usuarioform/',item.key]">
+            <i class="swal2-icon-content"></i>
+            editar
+            </a>
+        </td>
+        <td>
+            <a href="#" >
+            <i class="bi bi-square"></i>
+            delete
+            </a>
+        </td>
+    </tr>
+</table> 
